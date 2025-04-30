@@ -73,8 +73,10 @@ const PropertyOwnerSetup = () => {
     console.log("Form submitted:", formData);
 
     try {
-      const validatedData = formSchema.parse(formData);
-      console.log("Form validated and submitted:", validatedData);
+      // uncomment this when ready
+      //const validatedData = formSchema.parse(formData);
+      //console.log("Form validated and submitted:", validatedData);
+      router.push("/scheduleAssessment");
       // Navigate to next page or handle success
     } catch (error: any) {
       console.log("Validation errors:", error.errors);
